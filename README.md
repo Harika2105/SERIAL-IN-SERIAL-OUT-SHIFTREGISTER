@@ -1,16 +1,16 @@
 # SERIAL-IN-SERIAL-OUT-SHIFTREGISTER
 
-**AIM:**
+### **AIM:**
 
 To implement  SISO Shift Register using verilog and validating their functionality using their functional tables
 
-**SOFTWARE REQUIRED:**
+### **SOFTWARE REQUIRED:**
 
 Quartus prime
 
-**THEORY**
+### **THEORY**
 
-**SISO shift Register**
+### **SISO shift Register**
 
 A Serial-In Serial-Out shift register is a sequential logic circuit that allows data to be shifted in and out one bit at a time in a serial manner. It consists of a cascade of flip-flops connected in series, forming a chain. The input data is applied to the first flip-flop in the chain, and as the clock pulses, the data propagates through the flip-flops, ultimately appearing at the output.
 
@@ -23,20 +23,33 @@ Figure 01 4 Bit SISO Register
 The synchronous nature of the flip-flops ensures that the shifting of data occurs in a coordinated manner. When the clock signal rises, the input data is sampled and stored in the first flip-flop. On subsequent clock pulses, the stored data propagates through the flip-flops, moving from one flip-flop to the next.
 Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and an output (Q). The D input represents the data to be loaded into the flip-flop, while the CLK input is connected to the common clock signal. The output (Q) of each flip-flop is connected to the D input of the next flip-flop, forming a cascade.
 
-**Procedure**
+### **Procedure**
+```
+1.Type the Verilog program in Quartus Prime to implement the 4-bit Serial-In Serial-Out (SISO) Shift Register.
 
-/* write all the steps invloved */
+2.Compile and run the program to ensure the design is error-free.
 
-**PROGRAM**
+3.Generate the RTL schematic to visualize the cascading D flip-fop connections and save it for documentation.
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming.
+4.Create nodes for the serial input (SI),clock (CLK),and serial output (SO) to observe the shifting process during simulation.
 
-Developed by: RegisterNumber:
+5.Simulate the design for different input serail data patterns and observe the timing diagrams.
+```
+### **PROGRAM**
+![SISO program](https://github.com/user-attachments/assets/1bd3684c-9a3d-48e3-a521-d401c9917011)
+```
+Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-*/
+Developed by:S.HARIKA
+RegisterNumber:24002063
+```
 
-**RTL LOGIC FOR SISO Shift Register**
+### **RTL LOGIC FOR SISO Shift Register**
+![SISO EX10](https://github.com/user-attachments/assets/46eb1e13-c8aa-47b9-862f-5bc290a9ec4e)
 
-**TIMING DIGRAMS FOR SISO Shift Register**
 
-**RESULTS**
+### **TIMING DIGRAMS FOR SISO Shift Register**
+![SISO wf](https://github.com/user-attachments/assets/cdf38d51-0407-4b6e-baa3-1441f7870a34)
+
+### **RESULTS**
+Thus,the Serial-In Serail-Out (SISO)Shift Register is implemented using Verilog and its functionality is validated with the truth table and timing diagrams.
